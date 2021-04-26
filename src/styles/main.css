@@ -1,0 +1,21 @@
+body {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#frame {
+  display: flex;
+  width: 70vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+#frame img {
+  height: 80%;
+  width: 80%;
+}
+
+/*# sourceMappingURL=main.css.map */
