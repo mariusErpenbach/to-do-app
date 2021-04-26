@@ -9,10 +9,30 @@ border-color:black;
     h1{
         margin-right:30%;
         margin-top:-5%;
+        margin-bottom:5%;
         align-self:center;
         width:50%;
         text-align:center;
-        background-color:yellow;
-      
+   
+    }
+    section{
+        height:20%;
+        width:100%;
+        background-color:grey;
+    }
+  
+
+    form{
+            display:flex;
+            flex-direction:row;
+            height:10%;
+        input{
+            background-color:rgba(0,0,0,0);
+            width:80%;
+  
+        }
+        button{
+            background-color:rgba(0,0,0,0);
+        }
     }
 }
