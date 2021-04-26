@@ -1,21 +1,42 @@
 body {
-  background-color: azure;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #84d2ff;
 }
 
 #frame {
+  background-image: url("../img/notebook-4839909_1920.jpg");
+  background-size: 60em 40em;
+  height: 40em;
+  width: 60em;
   display: flex;
-  width: 70vw;
-  height: 100vh;
-  justify-content: center;
   align-items: center;
-  background-color: grey;
+  justify-content: center;
 }
-#frame img {
-  height: 80%;
-  width: 80%;
+
+#toDoList {
+  height: 73%;
+  width: 28%;
+  border-style: dotted;
+  border-color: black;
+  margin-left: -23%;
+  display: flex;
+  flex-direction: column;
+}
+#toDoList h1 {
+  margin-right: 30%;
+  margin-top: -5%;
+  align-self: center;
+  width: 50%;
+  text-align: center;
+  background-color: yellow;
+}
+
+#menu {
+  height: 75%;
+  width: 20%;
+  border-style: dotted;
+  border-color: black;
+  position: relative;
+  right: 35%;
 }
 
 /*# sourceMappingURL=main.css.map */
