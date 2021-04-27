@@ -1,5 +1,6 @@
 numberOfTasks = 0;
 const addTask =(e)=>{
+  
     const randomColor=()=>{
         // return number random number between 0 and 100 and then add 155 to it. (3times) to generate smooth light colors.
         newRGBvalues=[155,155,155];
@@ -8,7 +9,7 @@ const addTask =(e)=>{
         }
         return `rgb(${newRGBvalues[0]},${newRGBvalues[1]},${newRGBvalues[2]})`
     }
-    
+
     e.preventDefault();
 // ----------------------------------------------------create new section
 var newTaskSection = document.createElement("section");
@@ -24,6 +25,9 @@ newTaskSection.appendChild(newTaskPhrase);
 // -----------------------------------------append section to task list
 document.getElementById("toDoList").insertBefore(newTaskSection,newTaskForm)
 numberOfTasks++;
+if(numberOfTasks==8){
+  document.getElementById("toDoList").removeChild(newTaskForm)
+}
 }
 
 
