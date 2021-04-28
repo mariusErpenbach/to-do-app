@@ -20,6 +20,8 @@ newTaskSection.appendChild(newCheckbox);
 // -----------------------------------------append section to task list
 document.getElementById("toDoList").insertBefore(newTaskSection,newTaskForm)
 numberOfTasks++;
+//-------------------------------------------------clear user input field
+document.getElementById("newTask").value ="";
 // -----------------------------------------------check if page is full 
 if(numberOfTasks==8){
 // -----------------------------------------------Delete form
@@ -27,9 +29,19 @@ if(numberOfTasks==8){
 }
 }
 
-  
+const timeStamp = () => {
+    var today = new Date();
+    var day = String(today.getDate()).padStart(2, '0');
+    var month = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var year = today.getFullYear();
+    today =  month + '/' + day + '/' + year;
+    return today
+}
+document.getElementById("timeStamp").innerHTML=timeStamp();
+
+
 const randomColor=()=>{
-    // return number random number between 0 and 100 and then add 155 to it. (3times) to generate smooth light colors.
+    // return random number between 0 and 100 and then add 155 to it. (3times) to generate smooth light colors.
     newRGBvalues=[155,155,155];
     for (i=0;i<=3;i++){
     newRGBvalues[i]+=(Math.floor(Math.random() * 101))
